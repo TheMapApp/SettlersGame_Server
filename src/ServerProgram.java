@@ -97,6 +97,57 @@ public class ServerProgram extends Listener{
             server.sendToAllTCP(roll);
         }
     }
+    //The following void received will send the following positions of the houses, roads and the turn as well to the corresponding other clients.
+    public void received(Connection c, Object p) { // A function that gets called when something is received
+        if (p instanceof HousePosX) { //If it is the x position for the house
+            HousePosX var = new HousePosX();
+            var.x = c.getID();
+            System.out.println("Receieved x");
+            server.sendToAllExceptTCP(c.getID(), p); // Send that position to all clients
+        }
+        if (p instanceof HousePosY) { //If it is the y position for the house
+            System.out.println("Receieved y");
+            server.sendToAllExceptTCP(c.getID(), p); // Send that position to all clients
+        }
+        if (p instanceof RoadX1) { //If it is the first x position for the of the road
+            System.out.println("Receieved y");
+            server.sendToAllExceptTCP(c.getID(), p); // Send that position to all clients
+        }
+        if (p instanceof RoadX2) { //If it is the second x position for the of the road
+            System.out.println("Receieved y");
+            server.sendToAllExceptTCP(c.getID(), p); // Send that position to all clients
+        }
+        if (p instanceof RoadY1) { //If it is the first y position for the of the road
+            System.out.println("Receieved y");
+            server.sendToAllExceptTCP(c.getID(), p); // Send that position to all clients
+        }
+        if (p instanceof RoadY2) { //If it is the second x position for the of the road
+            System.out.println("Receieved y");
+            server.sendToAllExceptTCP(c.getID(), p); // Send that position to all clients
+        }
+        //This if-statement assigns the next players/clients turn.
+        if(p instanceof Turn){
+            Turn tur = new Turn();
+            turn += 1;
+            if(turn > players){
+                turn = 1;
+            }
+            tur.turn = turn;
+            server.sendToAllTCP(tur);
+            DiceRoll roll = new DiceRoll();
+            roll.dieRoll = Roll();
+            server.sendToAllTCP(roll);
+        }
+        if (p instanceof TownX) {
+            System.out.println("Receieved TownX");
+            server.sendToAllExceptTCP(c.getID(), p);
+        }
+        if (p instanceof TownY) {
+            System.out.println("Receieved TownY");
+            server.sendToAllExceptTCP(c.getID(), p);
+        }
+    }
+
 
     //This void will print the corresponding line of code if a client loses connection or disconnects.
     public void disconnected(Connection c)  {
