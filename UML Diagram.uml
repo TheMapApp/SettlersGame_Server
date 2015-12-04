@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="538.0" y="317.0">DiceRoll</node>
+    <node x="0.0" y="317.0">GameStart</node>
+    <node x="274.0" y="509.0">RoadY2</node>
+    <node x="374.0" y="317.0">ResType</node>
+    <node x="401.0" y="509.0">RoadY1</node>
+    <node x="385.0" y="0.0">ResourceArray</node>
+    <node x="298.0" y="413.0">Ressources</node>
+    <node x="436.0" y="413.0">HousePosY</node>
+    <node x="0.0" y="509.0">HousePosX</node>
+    <node x="528.0" y="509.0">RoadX2</node>
+    <node x="0.0" y="605.0">RoadX1</node>
+    <node x="0.0" y="0.0">ServerProgram</node>
+    <node x="198.0" y="317.0">PlayerColor</node>
+    <node x="0.0" y="413.0">TownY</node>
+    <node x="149.0" y="413.0">TownX</node>
+    <node x="137.0" y="509.0">Turn</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="386.0" y="374.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
