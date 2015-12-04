@@ -4,6 +4,8 @@ These are pictures with a few of our UML Class Diagrams. We created this in the 
 
 There is a person with an extremely large amount of lines because we encountered a few problems with commiting so we had to drop what we did initially and upload everything that was on a current state on a person's computer and work like that before we were able to commit anything. Those exagerate lines are caused because we had to commit an entire folder.
 
+Also, the server program now only has 2 persons listed as contributers, while the client program have 4. The reason for that is that some of the work with the server has been made in the client program in order to make the client receive the information. Therefore "connecter" class in the client program, have been worked on by the server-group.
+
 Also, a person on the Server has lines of code inside the client, because it contains networking code.
 
 In case everything goes tits-up, this is the Read-Me in order to install this project into your working IDE.
