@@ -1,7 +1,7 @@
 In case everything goes tits-up, this is the Read-Me in order to install this project into your working IDE.
 
 Repositories to be extracted from GitHub:
-The repositories needed for the project to work are "Settler-s_v42" and "NewServerClient".
+The repositories needed for the project to work are "Settlers-gameclient" and "SettlersGame_Server".
 
 If you are using Intelli-J IDEA:
 1. Open Intelli-J IDEA
@@ -11,8 +11,6 @@ If you are using Intelli-J IDEA:
 5. Press OK.
 6. DONE!
 After this, it is possible to run both the server and the client version.
-
-If you are using Eclipse:
 
 For running the server and the client:
 1. Firstly, you need to run the server, via the ServerProgramClass. Once you get the command in your IDE, you can then run the client version:
