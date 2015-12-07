@@ -40,6 +40,7 @@ public class ServerProgram extends Listener{
 
         server.getKryo().register(TownX.class);
         server.getKryo().register(TownY.class);
+        server.getKryo().register(GameStart.class);
 
 
         //Binding the server to a specific TCP and UDP port, which is initialized at the top (static int udpPort = 54555, tcpPort = 54555)
@@ -95,6 +96,8 @@ public class ServerProgram extends Listener{
             DiceRoll roll = new DiceRoll();
             roll.dieRoll = Roll();
             server.sendToAllTCP(roll);
+            GameStart gamestart = new GameStart();
+            server.sendToAllTCP(gamestart);
         }
     }
     //The following void received will send the following positions of the houses, roads and the turn as well to the corresponding other clients.
